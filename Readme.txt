@@ -70,7 +70,7 @@ images/
 
 GitHub Repository:
 
-https://github.com/[your-username]/COS10005-Assignment2
+https://github.com/siddiq-ash/wd_assign2_106522377
 
 
 JAVASCRIPT VALIDATION LOGIC
