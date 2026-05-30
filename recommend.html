@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="css/styleres.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Restaurant Discovery Platform</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="indexres.html">Home</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="recommend.html" class="active">Recommendations</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+    </ul>
+</nav>
+
+<section>
+    <form>
+        <h2>Restaurant Recommendation</h2>
+
+        <label for="diet">Dietary Preference</label>
+        <select id="diet">
+            <option value="None">None</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Halal">Halal</option>
+        </select>
+
+        <label for="budget">Budget</label>
+        <select id="budget">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <label for="purpose">Dining Purpose</label>
+        <select id="purpose">
+            <option value="Family">Family</option>
+            <option value="Date">Date</option>
+            <option value="Business">Business</option>
+        </select>
+
+        <button type="button" onclick="recommendRestaurant()">Get Recommendation</button>
+
+        <p id="recommendation"></p>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 Restaurant Discovery Platform</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

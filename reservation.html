@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="css/styleres.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Restaurant Discovery Platform</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="indexres.html">Home</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="recommend.html">Recommendations</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="reservation.html" class="active">Reservation</a></li>
+    </ul>
+</nav>
+
+<form id="reservationForm" method="POST" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+    <h2>Make a Reservation</h2>
+
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname">
+
+    <label for="reserveEmail">Email</label>
+    <input type="email" id="reserveEmail" name="reserveEmail">
+
+    <label for="reservePhone">Phone</label>
+    <input type="text" id="reservePhone" name="reservePhone">
+
+    <label for="restaurant">Restaurant</label>
+    <label for="restaurant">Restaurant</label>
+
+ <select id="restaurant" name="restaurant">
+    <option value="">Select restaurant</option>
+    <option value="Roma Dining">Roma Dining</option>
+    <option value="Dine at Shibuya">Dine at Shibuya</option>
+    <option value="Dragon of Fire">Dragon of Fire</option>
+    <option value="Curry Compound">Curry Compound</option>
+    <option value="Fiesta Mexicana">Fiesta Mexicana</option>
+    <option value="Outback Grill">Outback Grill</option>
+ </select>
+
+    <label for="date">Reservation Date</label>
+    <input type="datetime-local" id="date" name="date">
+
+    <label for="people">Number of People</label>
+    <input type="number" id="people" name="people">
+
+    <label for="requests">Special Requests</label>
+    <textarea id="requests" name="requests"></textarea>
+
+    <label for="deposit">Deposit Amount</label>
+    <input type="text" id="deposit" name="deposit" readonly>
+
+    <label for="payment">Payment Method</label>
+    <select id="payment" name="payment">
+        <option value="">Select payment method</option>
+        <option value="Voucher">Voucher</option>
+        <option value="Online">Online Payment</option>
+    </select>
+
+    <div id="voucherSection">
+        <label for="voucher">Voucher Code</label>
+        <input type="text" id="voucher" name="voucher" placeholder="12 digit voucher code">
+    </div>
+
+    <div id="cardSection">
+        <label for="cardType">Card Type</label>
+        <select id="cardType" name="cardType">
+            <option value="">Select card type</option>
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Amex">American Express</option>
+        </select>
+
+        <label for="card">Credit Card Number</label>
+        <input type="text" id="card" name="card">
+    </div>
+
+    <label class="checkbox-label">
+        <input type="checkbox" id="sameEmail">
+        Same as email address
+    </label>
+
+    <label for="billingEmail">Billing Email</label>
+    <input type="email" id="billingEmail" name="billingEmail">
+
+    <button type="submit">Reserve</button>
+
+    <p id="reservationError"></p>
+</form>
+
+<footer>
+    <p>&copy; 2026 Restaurant Discovery Platform</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
