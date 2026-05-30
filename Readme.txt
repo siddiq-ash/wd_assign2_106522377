@@ -4,9 +4,8 @@ Student Name: Khawaja Ashaz Siddiq
 
 Student ID: 106522377
 
-
-
-
+MERCURY DEPLOYMENT URL LINK:
+https://mercury.swin.edu.au/cos10005/s106522377/Assignment2%20/wd_assign2_106522377/indexres.html
 
 Image references:
 
